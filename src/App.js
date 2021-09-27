@@ -64,11 +64,10 @@ function App() {
   ));
 
   const randomPlay = () => {
-    let randomNumber = 0;
     for (let i = 0; i < 100; i++) {
       setTimeout(() => {
-        randomNumber = Math.floor(Math.random() * 9);
-        playAudio(keys[randomNumber].key);
+        ;
+        playAudio(keys[Math.floor(Math.random() * 9)].key);
       }, i * 170);
     }
   };
